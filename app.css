@@ -1,0 +1,95 @@
+body {
+    background-color: wheat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.calculator {
+    background-color: #151b29;;
+    padding: 20px;
+    border-radius: 10px;
+    transform:
+    perspective(750px)
+    translate3d(0px, 0px, -250px)
+    rotateX(27deg)
+    scale(0.9, 0.9);
+  border-radius: 20px;
+  border: 3px solid #868686;
+  box-shadow: 0 70px 40px -20px rgba(0, 0, 0, 0.4);
+  transition: 0.4s ease-in-out transform;
+}
+
+.calculator:hover {
+    transform: perspective(3000px) rotateY(5deg);
+}
+
+.screen {
+    width: 224px;
+    background-color: aquamarine;
+    font-size: 40px;
+    text-align: end;
+    padding: 4px;
+    box-shadow: 0 0.5em 0.5em -0.4em aquamarine;
+    border-radius: 10px;
+}
+
+.buttons {
+    width: 232px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+button {
+    background-color: rgb(131, 129, 129);
+    border-radius: 5px;
+    border-color: aliceblue;
+    color:white;
+    font-size: 40px;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    margin: 4px;
+    box-shadow: 0 0.5em 0.5em -0.4em rgb(66, 66, 66)
+}
+
+button:hover {
+    background-color: rgb(111, 110, 110);
+    box-shadow: 0 0.5em 0.5em -0.4em silver;
+    transform: translateY(-0.1em);
+    cursor: pointer;
+}
+
+button:active {
+    background-color: rgb(212, 212, 212);
+}
+
+#equals {
+    background-color: rgb(218, 1, 1);
+}
+
+#equals:hover {
+    background-color: rgb(198, 1, 2);
+    box-shadow: 0 0.5em 0.5em -0.4em red;
+    transform: translateY(-0.1em);
+    cursor: pointer;
+    border-color: red;
+}
+
+#clear {
+    width: 100%;
+    background-color: rgb(252, 226, 27);
+    font-size: 30px;
+}
+
+#clear:hover {
+    background-color: rgb(252, 201, 17);
+    border-color:#f1ff5c;
+    color: white;
+    box-shadow: 0 0.5em 0.5em -0.4em #d4b715;
+    transform: translateY(-0.1em);
+    cursor: pointer;
+}
+
+
